@@ -10,7 +10,7 @@ After applying preprocessing steps to the dataset we are left with ~19k samples.
 ### Choosing the category from product_category_tree :
 Applied two techniques to figure out the primary category of each sample - <br/>
 1. Chose the main category of product_category_tree as the label.
-2. Found out the frequency of all the unique categories in the train+valid dataset and chose the ones which have frequency greater than equal to 100. 
+2. Found out the frequency of all the unique categories in the train+valid dataset and chose the ones which have frequency greater than equal to 100, which are __97 most common categories__.
   Sorted the list on the basis of increasing order of frequency.
   Traversed through each sample's product_category_tree and chose the category which ocuurs in the sorted list.
   
@@ -50,10 +50,10 @@ Applied two techniques to figure out the primary category of each sample - <br/>
   __Product_name, description, brand, product_specifications__|Random Forest|word2vec|89.03
   __Product_name, description, brand, product_specifications__|MLP Classifier|word2vec|93.58
   
-   FEATURE | BERT
-   ---------|----
-   __Description__|96.98
-   __Product_name, description, brand, product_specifications__ |97.09  
+   FEATURE | BERT ACC | BERT LOSS
+   ---------|--------- | ------
+   __Description__|96.98|0.1569
+   __Product_name, description, brand, product_specifications__ |97.09 | 0.1392
    
 ___2. Category based on most common categories in the dataset as label__
    
@@ -74,10 +74,10 @@ ___2. Category based on most common categories in the dataset as label__
   __Product_name, description, brand, product_specifications__|Logistic Regression|word2vec|91.33
   __Product_name, description, brand, product_specifications__|MLP Classifier|word2vec|83.47
   
-   FEATURE | BERT
-   ---------|----
-   __Description__|81.69
-   __Product_name, description, brand, product_specifications__ |97.09  
+   FEATURE | BERT ACC | BERT LOSS
+   ---------|----------| --------
+   __Description__|81.69 | 0.9853
+   __Product_name, description, brand, product_specifications__ |85.46 | 0.8804
    
    
 __Inferences__-
