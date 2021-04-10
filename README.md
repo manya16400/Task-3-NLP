@@ -42,7 +42,6 @@ Applied two techniques to figure out the primary category of each sample - <br/>
   Description|Logistic Regression|word2vec|93.14
   Description|Random Forest|word2vec|89.78
   Description|MLP Classifier|word2vec|93.17
-  -----------|---------------|--------|-----
   Product_name, description, brand, product_specifications|NB Classifier|TF-IDF|87.27
   Product_name, description, brand, product_specifications|Linear SVM|TF-IDF|95.27
   Product_name, description, brand, product_specifications|Logistic Regression|TF-IDF|98.15
