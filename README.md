@@ -1,11 +1,12 @@
 # Task-4.-NLP
 The entire code has been developed using Python programming language, utilizing its powerful text processing and machine learning modules.
 
-## About
+### About
 This repository illustrates the analysing, text preprocessing/cleaning of flipkart product data and building a classifier to classify the products into their respective categories.
 
-## Data
+### Data
 After applying preprocessing steps to the dataset we are left with ~19k samples. Splitting into train, validation and test (70%, 20% and 10%).
+
 ### Choosing the category from product_category_tree
 Applied two techniques to figure out the primary category of each sample - <br/>
 1. Chose the main category of product_category_tree as the label.
@@ -13,7 +14,7 @@ Applied two techniques to figure out the primary category of each sample - <br/>
   Sorted the list on the basis of increasing order of frequency.
   Traversed through each sample's product_category_tree and chose the category which ocuurs in the sorted list.
   
-## Classifier
+### Classifier
 #### Approach:
  1. The text features are cleaned by removing bad symbols and stopwords using nltk.
  2. Considered two types of features as input- <br/>
@@ -35,7 +36,7 @@ Applied two techniques to figure out the primary category of each sample - <br/>
   --------|-------|------------|---------
   __Description__|NB Classifier|TF-IDF|86.61
   __Description__|Linear SVM|TF-IDF|94.99
-  __Description|Logistic Regression|TF-IDF|98.21__
+  __Description__|__Logistic Regression__|__TF-IDF__|__98.21__
   __Description__|MLP Classifier|TF-IDF|97.32
   __Description__|Logistic Regression|word2vec|93.14
   __Description__|Random Forest|word2vec|89.78
