@@ -17,7 +17,7 @@ Applied two techniques to figure out the primary category of each sample - <br/>
 ### Classifier :
 
 #### Approach:
- 1. The text features are cleaned by removing bad symbols and stopwords using nltk.
+ 1. The text features are cleaned using various NLP techniques like removing bad symbols, stopwords using nltk etc.
  2. Considered two types of features as input- <br/>
     a) Decription
     b) Product_name, description, brand, product_specifications
