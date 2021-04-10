@@ -31,7 +31,7 @@ __Approach__
      f) Bert Classifier <br/>
      
 ### Results : 
- __1. Main category as label__
+ __1. MAIN CATEGORY AS LABEL__
    
   FEATURE | MODEL | VECTORIZER | ACCURACY
   --------|-------|------------|---------
@@ -54,9 +54,9 @@ __Approach__
    ---------|--------- | ------
    __Description__|96.98|0.1569
    Product_name, description, brand, product_specifications |97.09 | 0.1392
-   
-<br/>
-__2. Category based on most common categories in the dataset as label__
+
+
+__2. CATEGORY BASED ON MOST COMMON CATEGORIES IN THE DATASET AS LABEL__
    
   FEATURE | MODEL | VECTORIZER | ACCURACY
   --------|-------|------------|---------
