@@ -16,21 +16,21 @@ Applied two techniques to figure out the primary category of each sample - <br/>
   
 ### Classifier :
 
-#### Approach:
+__Approach__
  1. The text features are cleaned using various NLP techniques like removing bad symbols, stopwords using nltk etc.
  2. Considered two types of features as input- <br/>
-    a) Decription
-    b) Product_name, description, brand, product_specifications
+    a) Decription <br/>
+    b) Product_name, description, brand, product_specifications <br/>
  3. Applied sklearn feature_extraction libraries CountVectorizer() and TfidfTransformer() (term frequency-inverse document frequency formula) and word2vec to our features to convert text into embeddings.
  4. The following algorithms are applied on the dataset- <br/>
-     a) Naive-Bayes Classifier
-     b) Random Forest
-     c) Linear SVM
-     d) MLP Classifier
-     e) Logistic REgression
-     f) Bert Classifier
+     a) Naive-Bayes Classifier <br/>
+     b) Random Forest <br/>
+     c) Linear SVM <br/>
+     d) MLP Classifier <br/>
+     e) Logistic REgression <br/>
+     f) Bert Classifier <br/>
      
-### Results  
+### Results : 
  ___1. Main category as label__
    
   FEATURE | MODEL | VECTORIZER | ACCURACY
@@ -54,7 +54,8 @@ Applied two techniques to figure out the primary category of each sample - <br/>
    ---------|--------- | ------
    __Description__|96.98|0.1569
    Product_name, description, brand, product_specifications |97.09 | 0.1392
-   
+   <br/>
+   <br/>
 ___2. Category based on most common categories in the dataset as label__
    
   FEATURE | MODEL | VECTORIZER | ACCURACY
