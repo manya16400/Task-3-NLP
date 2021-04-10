@@ -88,6 +88,8 @@ __Inferences__-
 5. Test accuracy on the best model ( __Logistic Regression__ with __description__ as feature and __TF-IDF__ as vectorizer) is 93.4%.
 
 ### Future Work
+These are the few techniques which could be used to increase the accuracy of the classification model and will help understand the data better.
 1. Should train deep learning models like LSTM, Bi-LSTM, C-LSTM etc. and evaluate the accuracy.
 2. Try different combination of features and observe the most important feature other than description.
 3. Try considering each main, secondary, tertiary etc. category and observe the results and analyse of the dataset.
+4. Use word embedding techniques like glove.
