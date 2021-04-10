@@ -1,20 +1,21 @@
 # Task-4.-NLP
 The entire code has been developed using Python programming language, utilizing its powerful text processing and machine learning modules.
 
-### About
+### About :
 This repository illustrates the analysing, text preprocessing/cleaning of flipkart product data and building a classifier to classify the products into their respective categories.
 
-### Data
+### Data :
 After applying preprocessing steps to the dataset we are left with ~19k samples. Splitting into train, validation and test (70%, 20% and 10%).
 
-### Choosing the category from product_category_tree
+### Choosing the category from product_category_tree :
 Applied two techniques to figure out the primary category of each sample - <br/>
 1. Chose the main category of product_category_tree as the label.
 2. Found out the frequency of all the unique categories in the train+valid dataset and chose the ones which have frequency greater than equal to 100. 
   Sorted the list on the basis of increasing order of frequency.
   Traversed through each sample's product_category_tree and chose the category which ocuurs in the sorted list.
   
-### Classifier
+### Classifier :
+
 #### Approach:
  1. The text features are cleaned by removing bad symbols and stopwords using nltk.
  2. Considered two types of features as input- <br/>
@@ -29,8 +30,8 @@ Applied two techniques to figure out the primary category of each sample - <br/>
      e) Logistic REgression
      f) Bert Classifier
      
-## Results  
-### 1. Main category as label
+### Results  
+ ___1. Main category as label__
    
   FEATURE | MODEL | VECTORIZER | ACCURACY
   --------|-------|------------|---------
@@ -54,7 +55,7 @@ Applied two techniques to figure out the primary category of each sample - <br/>
    __Description__|96.98
    __Product_name, description, brand, product_specifications__ |97.09  
    
-### 2. Category based on most common categories in the dataset as label
+___2. Category based on most common categories in the dataset as label__
    
   FEATURE | MODEL | VECTORIZER | ACCURACY
   --------|-------|------------|---------
@@ -78,8 +79,14 @@ Applied two techniques to figure out the primary category of each sample - <br/>
    __Description__|81.69
    __Product_name, description, brand, product_specifications__ |97.09  
    
+   
 __Inferences__-
 1. After performing the experiments, it is observed that Product_name, description, brand and product_specifications together as feature performs better than just description as a feature which implies that other information along with description is necessary as well for a better classification model.
 2. When the main category is considered as label, __Logistic Regression__ with __description__ as feature with __TF-IDF__ as vectorizer out performs all the other models with an accuracy of __98.21%__.
 3. When category based on most common categories in the dataset as label, __Logistic Regression__ with __Product_name, description, brand, product_specifications__ as feature and __word2vec__ as vectorizer out performs all the other models with an accuracy of __95.33%__.
-   
+4. Machine learning models performed better than deep learning models because the small dataset. 
+5. Test accuracy on the best model ( __Logistic Regression__ with __description__ as feature and __TF-IDF__ as vectorizer) is 93.4%.
+
+### Future Work
+1. Should train deep learning models like LSTM, Bi-LSTM, C-LSTM etc. and evaluate the accuracy.
+2. Try different combination of features and observe the most important feature other than description.
